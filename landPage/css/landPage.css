@@ -1,0 +1,316 @@
+
+*,*::after,*::before{box-sizing: border-box; outline: none}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+div#header{
+	padding-left: 10px;
+	padding-right: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 4px solid;
+	background-color: mediumpurple;
+}
+
+#logo a{
+	text-decoration: none;
+	font-size: 25px;
+	color: black;
+}
+
+#mainMenu ul{
+	display: flex;
+	justify-content: space-evenly;
+	width: 30vw;
+}
+
+#mainMenu li{
+	list-style-type: none;
+}
+
+#mainMenu li a{
+	color: black;
+}
+
+#mainMenu a{
+	display: block;
+	text-decoration: none;
+}
+
+#procurar{
+	text-indent: 20px;
+	border: none;
+	border-radius: 5px;
+	outline: 0.5px solid;
+	width: 8vw;
+	height: 3.5vh;
+}
+
+#slogan{
+	color: white;
+	background-image: url("../imagens/slogan/background-slogan.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	display: flex;
+	margin-bottom: ;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 4px black solid;
+	padding-left: 5%;
+}
+
+#slogan h1{
+	margin: 0;
+}
+
+#slogan img{
+	height: 100%;
+	width: 100%;
+}
+
+#link-flex{
+	font-size: 15px;
+	padding-right: 17vw;
+	display: flex;
+	justify-content: space-between;
+}
+
+#link-flex a{
+	padding: 3%;
+	border: 2px solid black;
+	border-radius: 10px;
+	text-decoration: none;
+	background-color: white;
+	color: black;
+}
+
+#link-flex a:hover,
+#link-flex a:focus,
+#link-flex a:target a{
+	color: black;
+	background-color: paleturquoise;
+	border-color: paleturquoise;
+}
+/* Fim do Header e Slogan */
+
+/* ----- Corpo da LandPage ----- */
+
+/* Vantagens */
+.nossasVantagens{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 4px solid;
+	background-color: gray;
+	background-image: url("../imagens/vantagens/background-vantagens.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+}
+
+#tituloVantagens{
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#vantagensImages{
+	display: flex;
+}
+
+#vantagensImages section{
+	margin: 0;
+	width: 20em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: lightgray;
+	border-top-left-radius: 10%;
+	border-top-right-radius: 10%;
+	border: 5px;
+	margin: 10px;
+}
+
+#vantagensImages p{
+	width: 70%;
+    margin-left: 10%;
+    margin-top: 0;
+    margin-bottom: 5%;
+}
+
+#vantagensImages img{
+	width: 100%;
+	border-radius: 15px%;
+	border-bottom: 3px black solid;
+}
+
+/* Clientes */
+.clients{
+	display: grid;
+	grid-template-areas:
+	"h h h h"
+	"p p p p"
+	"i1 i2 i3 i4"
+	"d1 d2 d3 d4";
+	grid-template-rows: 10vh 10vh 33vh 10vh;
+	background-color: mediumpurple;
+	color: white;
+}
+
+.vantagensHeader{
+	display: grid;
+	grid-area: h;
+	justify-content: center;
+}
+
+.vantagensParagraph{
+	display: grid;
+	grid-area: p;
+	justify-content: center;
+}
+
+.imgC1, .imgC2, .imgC3, .imgC4{
+	display: grid;
+	justify-content: center;
+}
+
+.nomeCliente1, .nomeCliente2, .nomeCliente3, .nomeCliente4{
+	display: grid;
+	justify-content: center;
+	color: black;
+}
+
+.imgC1{grid-area: i1}
+.imgC2{grid-area: i2}
+.imgC3{grid-area: i3}
+.imgC4{grid-area: i4}
+
+.nomeCliente1{grid-area: d1}
+.nomeCliente2{grid-area: d2}
+.nomeCliente3{grid-area: d3}
+.nomeCliente4{grid-area: d4}
+
+.clients img{
+	width: 100%;
+	border-radius: 50%;
+}
+
+/* Cadastro */
+#signUp{
+	background-color: white;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 30px;
+	border-bottom: 4px solid;
+}
+
+#name-email{
+	display: flex;
+}
+
+#name-email input{
+	background-color: white;
+	border-radius: 5px;
+	border: none;
+	outline: 1.5px solid;
+}
+
+#name-email fieldset{
+	display: flex;
+	flex-direction: column;
+	border: none;
+}
+
+#de{
+	display: flex;
+	flex-direction: column;
+	border: none;
+}
+
+textarea{
+	background-color: white;
+	resize: none;
+	border-radius: 5px;
+	border: none;
+	outline: 1.5px solid;
+}
+
+#suArea{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#suButton{
+	width: 15%;
+	height: 30px;
+	border: 0.5px solid;
+}
+
+/* Footer */
+
+#footer{
+	display: flex;
+	padding-left: 5%;
+	padding-right: 5%;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 15px;
+	background-color: mediumpurple;
+	color: white;
+}
+
+#social dl{
+	display: flex;
+	margin: 0;
+}
+
+#social dd{
+	margin: 8px;
+}
+
+#social dd a{
+	display: block;
+	height: 100%;
+	text-indent:-999999em;
+}
+
+#social dl img{
+	margin: 5px;
+	height: 20px;
+}
+
+#twitter{
+	background-image: url("../imagens/social/twitter.png");
+	background-repeat: no-repeat;
+	width:50px; height: 50px;
+	border-radius: 50%;
+}
+#facebook{
+	background-image: url("../imagens/social/facebook.png");
+	background-repeat: no-repeat;
+	width: 50px; height: 50px;
+	border-radius: 50%;
+}
+#instagram{
+	background-image: url("../imagens/social/instagram.png");
+	background-repeat: no-repeat;
+	width: 50px; height: 50px;
+	border-radius: 50%;
+}
+
+#dr{
+	font-size: 20px;
+}

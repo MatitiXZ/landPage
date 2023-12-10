@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Página geek do mano Matheus</title>
+	<link rel="stylesheet" href="css/landPage.css">
+</head>
+
+<body id="home">
+	<div id="header">
+		<nav id="logo"><a href="#home"><strong>Amantes Geek</strong></a></nav>
+		<nav id="mainMenu">
+			<ul id="navigation">
+				<li><a href="#about"><strong>Sobre</strong></a></li>
+				<li><a href="#advantages"><strong>Vantagens</strong></a></li>
+				<li><a href="#partnerships"><strong>Parcerias</strong></a></li>
+			</ul>
+		</nav>
+		<div id="search">
+			<form action="buscar.py" method="get">
+				<label for=""></label>
+				<input id="procurar" type="text"/>
+			</form>
+		</div>
+	</div> <!-- #header -->
+
+	<div id="slogan">
+		<div id="geral">
+			<div id="header-flex">
+				<header><h1><strong>Ser culto é ser GEEK!</strong></h1></header>
+				<p>Encontre seus produtos e artigos geek desejados  com mais facilidade e com preços acessíveis.</p>
+			</div>
+			<div id="link-flex">
+				<a href="#signUp"><strong>Junte-se a nós</strong></a>
+				<a href="landPage.html" target="_blank"><strong>Saiba mais</strong></a>
+			</div>
+		</div>
+		<figure><img src="imagens/slogan/slogan.png" alt="Imagem do slogan"></figure>
+	</div> <!-- #slogan -->
+
+	<div class="nossasVantagens" id="advantages">
+		<div id="tituloVantagens">
+			<header><h2>Nossas vantagens</h2></header>
+			<p>Presta bem atenção que só tem coisa boa.</p>
+		</div>
+		<div id="vantagensImages">
+			<section>
+				<figure id="variedade"><img src="imagens/vantagens/variedade.png" alt="Descrição da imagem do benefício 1"></figure>
+				<header><h3>Variedade</h3></header>
+				<p>Aqui você encontra uma grande variedade de produtos da cultura geek.</p>
+			</section>
+			<section>
+				<figure><img src="imagens/vantagens/precoAcessivel.png" alt="Descrição da imagem do benefício 3"></figure>
+				<header><h3>Preço acessível</h3></header>
+				<p>Aqui você vai encontrar preços acessíveis para os produtos que você procura.</p>
+			</section>
+			<section>
+				<figure id="geek"><img src="imagens/vantagens/geek.png" alt="Descrição da imagem do benefício 2"></figure>
+				<header><h3>Geek</h3></header>
+				<p>Simplesmente é geek, eu preciso realmente falar qual a vantagem disso?</p>
+			</section>
+		</div>
+	</div> <!-- #nossasVantagens -->
+
+	<div class="clients" id="partnerships">
+		<header class="vantagensHeader"><h2>Nossos Clientes</h2></header>
+		<p class="vantagensParagraph">Algumas pessoas que já utilizaram nossos serviços, gostaram e nos apoiam.</p>
+		<figure class="imgC1"><img src="imagens/clientes/clienteUm.png" alt="Cliente 1"></figure>
+		<p class="nomeCliente1"><strong>Artur Raffael</strong></p>
+
+		<figure class="imgC2"><img src="imagens/clientes/clienteDois.png" alt="Cliente 2"></figure>
+		<p class="nomeCliente2"><strong>Gabriel Matheus</strong></p>
+
+		<figure class="imgC3"><img src="imagens/clientes/clienteTres.png" alt="Cliente 3"></figure>
+		<p class="nomeCliente3"><strong>Matheus Soares</strong></p>
+
+		<figure class="imgC4"><img src="imagens/clientes/clienteQuatro.png" alt="Cliente 4"></figure>
+		<p class="nomeCliente4"><strong>Lucas Xavier</strong></p>
+
+	</div> <!-- #nossosClientes -->
+
+	<div id="signUp">
+		<header><h2>Junte-se a nós</h2></header>
+		<form action="assinar.py" method="post">
+			<div id="suArea">
+				<div id="name-email">
+					<fieldset>
+						<label for="name"><strong>Seu nome</strong></label>
+						<input type="text" id="name" size="45" maxlength="200">
+					</fieldset>
+					<fieldset>
+						<label for="email"><strong>Seu email</strong></label>
+						<input type="text" id="email" size="45" maxlength="200">
+					</fieldset>
+				</div>
+				<fieldset id="de">
+					<label for="description"><strong>Fale-nos sobre você</strong></label>
+					<textarea name="desc" id="description" cols="96" rows="12"></textarea>
+				</fieldset>
+				<input id="suButton" type="submit" value="Juntar-se">
+			</div>
+		</form>
+	</div> <!-- juntarSe -->
+
+	<footer id="footer">
+		<div id="social">
+			<dl>
+				<dd id="twitter"><a href="https://twitter.com/MatitiXZ" target="_blank">Twitter</a></dd>
+				<dd id="instagram"><a href="https://www.instagram.com/matitixz" target="_blank">Instagram</a></dd>
+				<dd id="facebook"><a href="https://www.facebook.com/matheus.s.soares.79274" target="_blank">Facebook</a></dd>
+			</dl>
+		</div>
+		<address id="dr"><strong> &copy; 2023 AmantesGeek </strong></address>
+	</footer>
+</body>
+</html>
